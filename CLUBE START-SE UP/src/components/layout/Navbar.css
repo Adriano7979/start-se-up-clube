@@ -1,0 +1,51 @@
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar .menu li {
+    margin-left: 20px;
+}
+
+.navbar .menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos responsivos para a navbar */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .menu {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navbar .menu li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
